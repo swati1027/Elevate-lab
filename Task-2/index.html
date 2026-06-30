@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ledger — A To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="sheet">
+    <header class="sheet-header">
+      <h1>Ledger</h1>
+      <p class="subtitle">Today's tasks, kept honest.</p>
+    </header>
+
+    <form id="taskForm" class="entry-row" autocomplete="off">
+      <span class="entry-index" id="nextIndex">01</span>
+      <input
+        type="text"
+        id="taskInput"
+        class="entry-input"
+        placeholder="Write a task…"
+        aria-label="New task"
+        maxlength="120"
+      />
+      <button type="submit" class="add-btn" aria-label="Add task">Add</button>
+    </form>
+
+    <p class="error-msg" id="errorMsg" role="alert"></p>
+
+    <section class="ledger-body">
+      <ul id="taskList" class="task-list"></ul>
+
+      <div class="empty-state" id="emptyState">
+        <p>The ledger is empty.</p>
+        <p class="empty-sub">Add a task above to open today's page.</p>
+      </div>
+    </section>
+
+    <footer class="sheet-footer">
+      <span id="taskCount">0 tasks</span>
+      <button type="button" id="clearCompleted" class="clear-btn">Clear completed</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
