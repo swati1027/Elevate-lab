@@ -42,7 +42,7 @@ No installation or dependencies required.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/swati1027/Elevate-lab/task-2
+   git clone https://github.com/swati1027/Elevate-lab.git
    cd ledger-todo-app
    ```
 2. Open `index.html` directly in your browser, **or** serve it with Live Server in VS Code for auto-reload while editing:
