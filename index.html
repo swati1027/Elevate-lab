@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kindling — Plan less. Build more.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Kindling</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#" class="nav-cta">Sign in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">For small teams shipping fast</p>
+        <h1>Your next idea<br>shouldn't wait<br><em>for a meeting.</em></h1>
+        <p class="hero-sub">
+          Kindling turns a half-formed thought into a shared plan in minutes —
+          no setup, no spreadsheets, no ceremony.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Start for free</a>
+          <a href="#how" class="btn btn-ghost">See how it works →</a>
+        </div>
+        <p class="hero-note">No credit card · Free for teams under 5</p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2>Built for the work, not the workflow</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-mark">Capture</span>
+            <h3>Drop a thought anywhere</h3>
+            <p>Jot ideas straight from Slack, email, or your keyboard shortcut. Kindling sorts them later, so you don't have to stop to file anything.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-mark">Shape</span>
+            <h3>Plans that write themselves</h3>
+            <p>Rough notes turn into a structured brief automatically — owner, timeline, and open questions, filled in as the conversation grows.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-mark">Ship</span>
+            <h3>One view, always current</h3>
+            <p>Everyone sees the same live plan. No status meeting required to find out what changed since yesterday.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="how">
+      <div class="container cta-band-inner">
+        <h2>Ready to skip the next planning meeting?</h2>
+        <a href="#" class="btn btn-primary">Get started — it's free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Kindling</span>
+        <p>Small plans. Built fast.</p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Kindling. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const siteNav = document.getElementById('siteNav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
